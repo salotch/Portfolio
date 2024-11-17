@@ -45,12 +45,12 @@ function pageTranstions() {
      let element = document.body;
      if (switcher) {
       if (papaSwitcher.style.justifyContent == "flex-start") {
-       
         element.classList.toggle("light-mode");
-        papaSwitcher.style.justifyContent = "flex-end";
+        papaSwitcher.style.setProperty("justify-content","flex-end") ;
+
       } else {
         element.classList.toggle("light-mode");
-        papaSwitcher.style.justifyContent = "flex-start";
+        papaSwitcher.style.setProperty("justify-content","flex-start") ;
       }
     }
   });
