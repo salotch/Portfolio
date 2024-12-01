@@ -60,8 +60,8 @@ function sendMail() {
   var params = {
     name: document.getElementById("name").value,
     email: document.getElementById("email").value,
-    message: document.getElementById("message").value,
-    subject: document.getElementById("subject").value
+    subject: document.getElementById("subject").value,
+    message: document.getElementById("message").value
   };
   var serviceID = "service_kvhdwu3";
   var templateID = "template_3u374l8";
