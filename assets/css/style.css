@@ -636,10 +636,26 @@ section {
   h2 {
     font-size: 3rem !important;
   }
+  .contact-content-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .contact-content-container .right-contact {
+    margin-left: 0;
+  }
 }
 @media screen and (max-width: 550px) {
   .portfolios {
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 1rem;
+  }
+}
+@media screen and (max-width: 370px) {
+  .input-control {
+    display: flex;
+    flex-direction: column;
+  }
+  .input-control #email {
+    margin: 16px 0 0 0 !important;
   }
 }/*# sourceMappingURL=style.css.map */

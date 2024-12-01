@@ -55,3 +55,24 @@ function pageTranstions() {
 }
 
 pageTranstions();
+
+function sendMail() {
+  var params = {
+    name: document.getElementById("name").value,
+    email: document.getElementById("email").value,
+    message: document.getElementById("message").value,
+    subject: document.getElementById("subject").value
+  };
+  var serviceID = "service_kvhdwu3";
+  var templateID = "template_3u374l8";
+  emailjs.send(serviceID, templateID, params).then(function (res) {
+    document.getElementById("name").value = "";
+    document.getElementById("email").value = "";
+    document.getElementById("message").value = "";
+    document.getElementById("subject").value = "";
+    alert("your message sent successfully");
+  })["catch"](function (err) {
+    alert("something went wrong");
+    console.log(err);
+  });
+}

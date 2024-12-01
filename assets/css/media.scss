@@ -2,8 +2,8 @@
   header .right-header {
     padding-right: 9rem !important;
   }
-  section{
-    padding-left:6rem !important;
+  section {
+    padding-left: 6rem !important;
     padding-right: 6rem !important;
   }
 }
@@ -42,26 +42,42 @@
       font-size: 2rem !important;
     }
   }
-  section{
+  section {
     padding: 3rem 3rem !important;
     padding-bottom: 9rem !important;
   }
   .portfolios {
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 1rem ;
+    grid-gap: 1rem;
   }
-  .bg-text{
+  .bg-text {
     top: 8%;
-    font-size:3.2rem !important ;
+    font-size: 3.2rem !important ;
   }
-  h2{
+  h2 {
     font-size: 3rem !important ;
   }
+  .contact-content-container {
+    display: flex;
+    flex-direction: column ;
+    .right-contact{
+    margin-left: 0 ;
+  }}
 }
 
 @media screen and (max-width: 550px) {
-    .portfolios {
-        grid-template-columns: repeat(1, 1fr);
-        grid-gap: 1rem ;
-      }
+  .portfolios {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 1rem;
+  }
+}
+@media screen and (max-width: 370px) {
+  .input-control{
+    display: flex;
+    flex-direction: column;
+    #email{
+   
+      margin: 16px 0 0 0 !important;
+    }
+  }
 }

@@ -17,6 +17,18 @@
       src="https://kit.fontawesome.com/285ed4b389.js"
       crossorigin="anonymous"
     ></script>
+
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+(function(){
+  emailjs.init({
+    publicKey: "jMUgcya84YRyNB-BU",
+  });
+})();
+</script>
+
   </head>
 
   <body class="main-content">
@@ -318,8 +330,6 @@
 
           <div class="contact-content-container">
             <div class="left-contact">
-              <!-- <h4>Contact Me Here</h4> -->
-
               <div class="contact-info">
                 <div class="contact-item">
                   <div class="icon">
@@ -379,35 +389,34 @@
                 </div>
               </div>
             </div>
-            <!-- <div class="right-contact">
-              <form action="" class="conatct-form">
+            <div class="right-contact">
+              <div action="" class="conatct-form">
                 <div class="input-control i-c-2">
-                  <input type="text" required placeholder="YOUR NAME" />
-                  <input type="email" required placeholder="YOUR EMAIL" />
+                  <input id="name" type="text" required placeholder="YOUR NAME" />
+                  <input id="email" type="email" required placeholder="YOUR EMAIL" />
                 </div>
 
                 <div class="input-control">
-                  <input type="text" required placeholder="ENTER SUBJECT" />
+                  <input type="text" id="subject" required placeholder="ENTER SUBJECT" />
                 </div>
 
                 <div class="input-control">
                   <textarea
                     name=""
-                    id=""
+                    id="message"
                     cols="15"
                     rows="8"
                     required
                     placeholder="YOUR MESSAGE"
-                  >
-                  </textarea>
+                  ></textarea>
                 </div>
                 <div class="submit-btn">
-                  <a href="#" class="main-btn">
+                  <a href="#" class="main-btn" onclick="sendMail()">
                     <span class="btn-text">submit</span>
                   </a>
                 </div>
-              </form>
-            </div> -->
+              </div>
+            </div>
           </div>
         </div>
       </section>
